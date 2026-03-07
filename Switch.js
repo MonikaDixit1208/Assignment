@@ -1,3 +1,6 @@
+//03- Consitional Statement
+//Create and call two JavaScript functions: `launchBrowser` with `if-else` for browser launch messages, and
+//`runTests` with `switch` for test type messages.
 function browserType(name)
 {   
     if(name==="chrome")
@@ -37,5 +40,6 @@ case "sanity" :
         }
 
           runType("abc ".toLowerCase())
+
 
 
