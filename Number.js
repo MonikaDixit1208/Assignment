@@ -1,3 +1,5 @@
+// 02-NumberType Create a JavaScript function that determines if a number is positive, negative, or zero and returns a
+//corresponding string indicating the type.
 function numberType(num)
 {
     if(num>0)
@@ -16,5 +18,6 @@ function numberType(num)
           return "Zero"
     }
 }
+
 
 console.log(numberType(-20))
