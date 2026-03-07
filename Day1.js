@@ -1,3 +1,6 @@
+//01 Primitive DataType Assignment Details:
+//Declare variables using `let` for different data types in JavaScript, and verify their types using `typeof`,
+//including an uninitialized variable.
 let firstName='Tina'
 let companyName="Abc"
 let mobNum=9818101641
@@ -12,4 +15,5 @@ console.log("type of mobile Number:"+typeof mobNum)
 console.log("Automation:"+isAutomation)
 console.log("type of Automation:"+typeof isAutomation)
 console.log("has Playwright:"+hasPlaywright)
+
 console.log("type of has Playwright:"+typeof hasPlaywright)
