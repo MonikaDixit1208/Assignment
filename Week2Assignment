@@ -1,0 +1,25 @@
+//Home Assignment <1> CSS SELECTORS Learning
+import {test} from '@playwright/test'
+test('assignment', async({page})=>
+{
+await page.goto('http://leaftaps.com/opentaps/control/main')
+await page.locator(`[id="username"]`).fill('Demosalesmanager')
+await page.locator(`[id="password"]`).fill('crmsfa')
+await page.locator(`[class="decorativeSubmit"]`).click()
+await page.getByRole('link',{name:'CRM/SFA'}).click()
+await page.locator(`[href="/crmsfa/control/leadsMain"]`).click()
+await page.locator(`[href="/crmsfa/control/createLeadForm"]`).click()
+await page.locator(`[name="companyName"]`).fill('testCName')
+await page.locator(`[name='firstName']`).last().fill('testFName')
+await page.locator(`[name="lastName"]`).last().fill('testLName')
+await page.locator(`[name="personalTitle"]`).fill('Ms')
+await page.locator(`[name="generalProfTitle"]`).fill('Miss')
+await page.locator(`[name="annualRevenue"]`).fill('1200')
+await page.locator(`[name="departmentName"]`).fill('testDepartment')
+await page.locator(`[name="primaryPhoneNumber"]`).last().fill('12347890')
+await page.locator(`[name="submitButton"]`).click()
+ console.log(await page.title())
+
+
+
+})
